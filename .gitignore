@@ -1,3 +1,7 @@
+.gitignore
+.idea
+*.iml
+
 # vue frontend
 **/node_modules
 **/dist/*
@@ -9,6 +13,7 @@ package-lock.json
 *.log
 *.ctxt
 .mtj.tmp/
+target/
 *.jar
 *.war
 *.nar
