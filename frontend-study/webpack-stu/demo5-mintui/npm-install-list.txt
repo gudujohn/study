@@ -1,0 +1,2 @@
+npm i mint-ui vue vue-router -S
+npm i webpack style-loader css-loader sass-loader node-sass url-loader file-loader babel-core babel-loader@7 babel-plugin-transform-runtime babel-preset-env babel-preset-stage-0 vue-loader vue-template-compiler -D 

@@ -1,0 +1,2 @@
+npm i jquery -S
+npm i style-loader css-loader less-loader less sass-loader node-sass -D

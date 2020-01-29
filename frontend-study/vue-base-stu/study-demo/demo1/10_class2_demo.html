@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>绑定class2 demo</title>
+        <script src="../../lib/vue-dev/dist/vue.min.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <!-- <h1 :style="{color:'red', 'font-weight':100}">这是一个很大很大的h1</h1> -->
+            <h1 :style="[styleObj1, styleObj2]">这是一个很大很大的h1</h1>
+        </div>
+
+        <script>
+            var vm = new Vue({
+                el: '#app',
+                data: {
+                    styleObj1: {color:'red', 'font-weight':100},
+                    styleObj2: {'font-style':'italic'}
+                },
+                methods: {
+                }
+            });
+        </script>
+    </body>
+
+</html>

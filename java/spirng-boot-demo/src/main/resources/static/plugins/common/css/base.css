@@ -1,0 +1,319 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+.glyphicon-globe:before {
+  content: "\e135";
+}
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+.glyphicon-lock:before {
+  content: "\e033";
+}
+.glyphicon-book:before {
+  content: "\e043";
+}
+.glyphicon-th:before {
+  content: "\e011";
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.l-global-topbar {
+	background-color:#008eb7;
+	height:24px;
+}
+.l-global-topbar-inner {
+	display:block;
+	position:relative;
+	padding-right:20px;
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-right:10px;
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.l-global-topbar-alarm {
+  color: #000;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:12px;
+  margin-top:4px;
+  font-weight:bolder;
+  text-decoration: none;
+}
+.l-global-topbar-item {
+	color: #fff;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:12px;
+	margin-top:4px;
+	text-decoration: none;
+}
+.l-global-topbar-item {
+  color: #fff;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:12px;
+  margin-top:4px;
+  text-decoration: none;
+}
+.l-global-topbar-item:hover {
+	color: #7ed1e8;
+	text-decoration: none;
+}
+.l-global-topbar-item:focus {
+	text-decoration: none;
+}
+
+.l-common-header {
+	background-color:#00a2ca;
+}
+.l-common-header-banner {
+	margin-left: 10px;
+	font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',Arial,sans-serif;
+	font-size:18px;
+	padding-bottom:13px;
+	padding-top:14px;
+	padding-left:15px;
+	padding-right:15px;
+	width:184px;
+	color:#FFF;
+}
+.l-common-header-menu {
+	display:block;
+	margin-right: 10px;
+}
+.l-common-header-menu > li {
+	display:block;
+	position:relative;
+	float: left;
+	font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',Arial,sans-serif;
+}
+.l-common-header-menu > li > a {
+	display:block;
+	position:relative;
+	float: left;
+	padding-bottom:15px;
+	padding-top:15px;
+	padding-left:15px;
+	padding-right:15px;
+	color:#FFF;
+	text-decoration: none;
+  cursor: pointer; 
+  cursor: hand;
+}
+.l-common-header-menu > li:hover > a {
+	text-decoration: none;
+	background-color: #0196bd;
+}
+.l-common-header-menu > li:focus > a {
+	text-decoration: none;
+}
+
+
+.dropdown-menu {
+  position: absolute;/*设置绝对定位，相对于父元素div.dropdown*/
+  top: 100%;/*让下拉菜单项在父菜单项底部，如果父元素不设置相对定位，该元素相对于body元素*/
+  left: 0;
+  z-index: 1000;/*让下拉菜单项不被其他元素遮盖住*/
+  display: none;/*默认隐藏下拉菜单项*/
+  float: left;
+  min-width: 140px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  list-style: none;
+  background-clip: padding-box;
+  background-color: rgb(241, 241, 241);
+  border: 0px none #fff;
+  box-shadow: 0 1px 5px #dddbdb;
+}
+
+.l-common-header-menu > li:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu > li {
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  position: relative;
+}
+
+.dropdown-menu > li > a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+.dropdown-menu > li:hover > a {
+  text-decoration: none;
+  color: #008eb7;
+}
+.dropdown-menu > li:focus > a {
+  text-decoration: none;
+}
+
+.l-form-item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.left-form-item-border {
+  border-left: 1px solid #cccccc;
+}
+.top-form-item-border {
+  border-top: 1px solid #cccccc;
+}
+.normal-form-item-border {
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.l-form-field-border {
+  background:transparent none;
+  border: 0px;
+}
+
+
+.x-grid3-row-warn{
+  background-color:#ffff00;
+}
+.x-grid3-row-info{
+  background-color:#00ff00;
+}
+.x-grid3-row-error{
+  background-color:#ff0000;
+}
+.x-grid3-cell-critical {
+  background-color:#ff0000;
+}
+.x-grid3-cell-major {
+  background-color:#ff9900;
+}
+.x-grid3-cell-minor {
+  background-color:#ffff00;
+}
+.x-grid3-cell-warning {
+  background-color:#1199ff;
+}
+
+.x-grid3-cell-acked {
+  background-color: grey;
+}
+.x-grid3-cell-cleared {
+  background-color: green;
+}
+.x-tree-node-red a span {
+  color:#ff0000;
+}
+.x-tree-node-green a span {
+  color:#00ff00;
+}
+
+
+.twinkling{ 
+  -webkit-animation: twinkling 1s infinite ease-in-out;
+  animation: twinkling 1s infinite ease-in-out;
+}
+@-moz-keyframes twinkling {  
+  0%{ 
+    opacity: 0.2; 
+  } 
+  100%{ 
+    opacity: 1; 
+  }
+}
+@-webkit-keyframes twinkling{ 
+  0%{ 
+    opacity: 0.2; 
+  } 
+  100%{ 
+    opacity: 1; 
+  } 
+} 
+@keyframes twinkling{ 
+  0%{ 
+    opacity: 0.2; 
+  } 
+  100%{ 
+    opacity: 1; 
+  } 
+}
+
+.notifyjs-foo-base {
+  opacity: 0.85;
+  width: 200px;
+  background: #F5F5F5;
+  padding-right: 35px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.notifyjs-foo-base .content {
+  width: 150px;
+  float: left;
+  padding: 15px;
+  text-align: left;
+}
+
+.notifyjs-foo-base .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}

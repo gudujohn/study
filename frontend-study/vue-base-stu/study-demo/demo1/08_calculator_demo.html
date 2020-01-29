@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>simple calculator demo</title>
+        <script src="../../lib/vue-dev/dist/vue.min.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <input type="text" v-model="input1" />
+            <select v-model="opt">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" v-model="input2" />
+            <input type="button" value="=" @click="calculator" />
+            <input type="text" v-model="result" />
+        </div>
+
+        <script>
+            var vm = new Vue({
+                el: '#app',
+                data: {
+                    input1: 0,
+                    input2: 0,
+                    result: 0,
+                    opt: "+"
+                },
+                methods: {
+                    calculator() {
+                        //way1:
+                        switch (this.opt) {
+                            case '+':
+                                this.result = parseInt(this.input1) + parseInt(this.input2);
+                                break;
+                            case '-':
+                                this.result = parseInt(this.input1) - parseInt(this.input2);
+                                break;
+                            case '*':
+                                this.result = parseInt(this.input1) * parseInt(this.input2);
+                                break;
+                            case '/':
+                                this.result = parseInt(this.input1) / parseInt(this.input2);
+                                break;
+                        }
+                        //way2:(不推荐使用)
+                        //var codeStr = 'parseInt(this.input1)' + this.opt + 'parseInt(this.input2)';
+                        //this.result = eval(codeStr);
+                        alert(parseInt(this.input1) + this.opt + parseInt(this.input2) + '=' + this.result);
+                    }
+                }
+            });
+        </script>
+    </body>
+
+</html>

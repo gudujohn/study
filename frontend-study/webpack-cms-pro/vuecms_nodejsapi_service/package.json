@@ -1,0 +1,19 @@
+{
+  "name": "vuecms_nodejsapi_service",
+  "version": "1.0.0",
+  "description": "vuecms api server",
+  "main": "app.js",
+  "scripts": {
+    "server": "node src/server.js"
+  },
+  "author": "JiangGengchao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.14.0",
+    "mysql": "^2.16.0",
+    "orm": "^5.0.4",
+    "vhost": "^3.0.2"
+  }
+}

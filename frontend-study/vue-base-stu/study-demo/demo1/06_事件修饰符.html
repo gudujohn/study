@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-cloak v-text v-html demo</title>
+    <script src="../../lib/vue-dev/dist/vue.min.js"></script>
+    <style>
+        .inner{
+            height: 150px;
+            background-color: darkcyan;
+        }
+        .outter{
+            padding: 40px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- .stop -->
+        <div class="inner" @click="div1Handler">
+            <input type="button" value="戳他" @click.stop="btnHandler"/>
+        </div>
+        <!-- .stop .self -->
+        <div class="outter"  @click="div2Handler">
+            <div class="inner" @click.self="div1Handler">
+                <input type="button" value="戳他" @click.stop="btnHandler"/>
+            </div>
+        </div>
+        <!-- .prevent .once -->
+        <a href="https://www.baidu.com" @click.prevent.once="linkClick">百度</a> 
+        <!-- .capture -->
+        <div class="inner" @click.capture="div1Handler">
+            <input type="button" value="戳他" @click="btnHandler"/>
+        </div>
+        <!-- .self -->
+        <div class="inner" @click.self="div1Handler">
+            <input type="button" value="戳他" @click="btnHandler"/>
+        </div>
+    </div>
+    
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {},
+            methods: {
+                div1Handler() {
+                    alert("div1Handler");
+                },
+                div2Handler() {
+                    alert("div2Handler");
+                },
+                btnHandler() {
+                    alert("btnHandler");
+                },
+                linkClick() {
+                    alert("linkClick get baidu"); 
+                }
+            }
+        });
+    </script>
+</body>
+</html>

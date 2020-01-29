@@ -1,0 +1,366 @@
+{
+    "widgetPool": {
+        "groups": [
+            {
+                "label": "基础功能",
+                "openType": "dropDown",
+                "fa": "fa-search",
+                "index": 1,
+                "widgets": [
+                    {
+                        "label": "通用查询",
+                        "widgetId": "CommonManagementWid"
+                    },
+                    {
+                        "label": "书签",
+                        "widgetId": "BookmarkWid"
+                    },
+                    {
+                        "label": "图层控制",
+                        "widgetId": "LayerListWid"
+                    },
+                    {
+                        "label": "地图测距",
+                        "widgetId": "MeasurementWid"
+                    },
+                    {
+                        "label": "图例",
+                        "uri": "widgets/Legend/Widget",
+                        "widgetId": "LegendWid"
+                    },
+                    {
+                        "label": "区域定位",
+                        "uri": "widgets/Locate/PrefectureLocate/Widget",
+                        "widgetId": "PrefectureLocateWid"
+                    },
+                    {
+                        "label": "坐标定位",
+                        "widgetId": "CoordinateLocateWid"
+                    }
+                ]
+            },
+            {
+                "label": "新增资源",
+                "openType": "dropDown",
+                "fa": "fa-plus",
+                "index": 2,
+                "widgets": [
+                    {
+                        "label": "新增公共资源",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "局站",
+                                "widgetId": "PipeDuctManagementWid"
+                            },
+                            {
+                                "label": "机房",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "网络资源点",
+                                "widgetId": "SlingDucttManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "新增管槽",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "管道",
+                                "widgetId": "PipeDuctManagementWid"
+                            },
+                            {
+                                "label": "杆路",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "挂墙",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "直埋",
+                                "widgetId": "SlingDucttManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "新增管槽段",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "管道段",
+                                "widgetId": "PipeDuctManagementWid"
+                            },
+                            {
+                                "label": "杆路段",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "挂墙段",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "直埋段",
+                                "widgetId": "SlingDucttManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "新增管槽点",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "人/手井",
+                                "widgetId": "WellManagementWid"
+                            },
+                            {
+                                "label": "人/手井（连续创建）",
+                                "widgetId": "CreateBatchWellWid"
+                            },
+                            {
+                                "label": "电杆",
+                                "widgetId": "PoleManagementWid"
+                            },
+                            {
+                                "label": "电杆（连续创建）",
+                                "widgetId": "CreateBatchPoleWid"
+                            },
+                            {
+                                "label": "挂墙点",
+                                "widgetId": "MountPointManagementWid"
+                            },
+                            {
+                                "label": "挂墙点（连续创建）",
+                                "widgetId": "CreateBatchMountPointWid"
+                            },
+                            {
+                                "label": "标石",
+                                "widgetId": "MarkstoneManagementWid"
+                            },
+                            {
+                                "label": "标石（连续创建）",
+                                "widgetId": "CreateBatchMarkstoneWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "新增光缆网资源",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "光路",
+                                "widgetId": "OpticalCircuitManagementWid"
+                            },
+                            {
+                                "label": "光缆",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "光缆段",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "光缆盘留",
+                                "widgetId": "SlingDucttManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "新增设备",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "ODF",
+                                "widgetId": "PipeDuctManagementWid"
+                            },
+                            {
+                                "label": "光交接箱",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "光分纤盒",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "光终端盒",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "光缆接头",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "光缆预留",
+                                "widgetId": "SlingDucttManagementWid"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "label": "公共资源管理",
+                "openType": "dropDown",
+                "fa": "fa-road",
+                "index": 3,
+                "widgets": [
+                    {
+                        "label": "局站管理",
+                        "widgetId": "SiteManagementWid"
+                    },
+                    {
+                        "label": "机房管理",
+                        "widgetId": "RoomManagementWid"
+                    },
+                    {
+                        "label": "网络资源点管理",
+                        "widgetId": "StrongholdManagementWid"
+                    }
+                ]
+            },
+            {
+                "label": "支撑网管理",
+                "openType": "dropDown",
+                "fa": "fa-magnet",
+                "index": 4,
+                "widgets": [
+                    {
+                        "label": "管槽",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "管道管理",
+                                "widgetId": "PipeDuctManagementWid"
+                            },
+                            {
+                                "label": "杆路管理",
+                                "widgetId": "PoleDuctManagementWid"
+                            },
+                            {
+                                "label": "挂墙管理",
+                                "widgetId": "SlingDucttManagementWid"
+                            },
+                            {
+                                "label": "直埋管理",
+                                "widgetId": "EmbedDuctManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "管槽段",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "管道段管理",
+                                "widgetId": "PipeSegmentManagementWid"
+                            },
+                            {
+                                "label": "杆路段管理",
+                                "widgetId": "PoleSegmentManagementWid"
+                            },
+                            {
+                                "label": "挂墙段管理",
+                                "widgetId": "SlingSegmentManagementWid"
+                            },
+                            {
+                                "label": "直埋段管理",
+                                "widgetId": "EmbedSegmentManagementWid"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "管槽点",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "人/手井管理",
+                                "widgetId": "WellManagementWid"
+                            },
+                            {
+                                "label": "电杆管理",
+                                "widgetId": "PoleManagementWid"
+                            },
+                            {
+                                "label": "挂墙点管理",
+                                "widgetId": "MountPointManagementWid"
+                            },
+                            {
+                                "label": "标石管理",
+                                "widgetId": "MarkstoneManagementWid"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "label": "光缆网管理",
+                "openType": "dropDown",
+                "fa": "fa-crop",
+                "index": 5,
+                "widgets": [
+                    {
+                        "label": "光路管理",
+                        "widgetId": "OpticalCircuitManagementWid"
+                    },
+                    {
+                        "label": "局向光纤管理",
+                        "widgetId": "LogicalFiberCircuitManagementWid"
+                    },
+                    {
+                        "label": "光缆管理",
+                        "widgetId": "OpticalCableManagementWid"
+                    },
+                    {
+                        "label": "光缆段管理",
+                        "widgetId": "OpticalCableSectionManagementWid"
+                    },
+                    {
+                        "label": "光缆盘留管理",
+                        "widgetId": "OpticalCoilerManagementWid"
+                    },
+                    {
+                        "label": "设备",
+                        "openType": "dropDown",
+                        "notSecondLevel": true,
+                        "widgets": [
+                            {
+                                "label": "ODF管理",
+                                "widgetId": "OdfManagementWid"
+                            },
+                            {
+                                "label": "光交接箱管理",
+                                "widgetId": "OccpManagementWid"
+                            },
+                            {
+                                "label": "光分纤箱管理",
+                                "widgetId": "OdpManagementWid"
+                            },
+                            {
+                                "label": "光终端盒管理",
+                                "widgetId": "OtbManagementWid"
+                            },
+                            {
+                                "label": "光缆接头管理",
+                                "widgetId": "OpticalSpliceClosureManagementWid"
+                            },
+                            {
+                                "label": "光缆预留管理",
+                                "widgetId": "OpticalCableReservationManagementWid"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

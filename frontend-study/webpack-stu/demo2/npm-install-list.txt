@@ -1,0 +1,2 @@
+npm i bootstrap@3.3.7 -S
+npm i style-loader css-loader sass-loader node-sass url-loader file-loader babel-core babel-loader@7 babel-plugin-transform-runtime babel-preset-env babel-preset-stage-0 -D
