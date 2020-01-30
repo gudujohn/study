@@ -6,16 +6,8 @@ package 创建型模式.factory;
  *
  */
 public interface IFactory {
-	Pizza createPizza(String type);
 
-	/**
-	 * 为了与我们抽象工厂模式进行对比而添加的代码
-	 * 如果我们这个工厂生产的产品增加了，也就是说我们的产品族不单一，我们可以直接在我们的Factory类中
-	 * 加入我们新的抽象方法供我们的具体工厂实现。
-	 * @param type
-	 * @return
-	 */
-	Mike createMilk(String type);
+	Pizza createPizza(String type);
 
 	/**
 	 *为了与我们抽象工厂模式进行对比而添加的代码

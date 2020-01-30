@@ -32,12 +32,6 @@ public class PizzaStoreFactoryImpl implements IFactory {
 	}
 
 	@Override
-	public Mike createMilk(String type) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public Pizza createPizzaCold(String type) {
 		if (type.equals("vgge")) {
 			return new PizzaVgge();
