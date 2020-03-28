@@ -1,0 +1,16 @@
+{
+  "name": "node-api-iviewadmin",
+  "version": "1.0.0",
+  "description": "node api server",
+  "main": "server.js",
+  "scripts": {
+    "serve": "nodemon src/server.js"
+  },
+  "author": "JiangGengchao",
+  "license": "ISC",
+  "dependencies": {
+    "connect-multiparty": "^2.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

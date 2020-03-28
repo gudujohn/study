@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <% if(typeof title == "undefined") { %> 
+        <title>404.ERROR</title>
+    <% } else { %>
+        <title><%= title %></title>
+    <% } %>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom CSS here -->
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pad-top text-center">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h1> What have you done? </h1>
+                <h5> Now Go Back Using Below LInk</h5>
+                <span id="error-link"></span>
+                <h2>! ERROR DECETED !</h2>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!--Core JavaScript file  -->
+    <script src="/js/jquery.min.js"></script>
+    <!--bootstrap JavaScript file  -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!--Count Number JavaScript file  -->
+    <script src="/js/countUp.js"></script>
+    <!--Custom JavaScript file  -->
+    <script src="/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            <% if(typeof error_code == "undefined") { %> 
+                var error_code = 404;
+            <% } else { %>
+                var error_code = <%= error_code %>;
+            <% } %>
+            $.mainApp.main_fun(error_code);
+        });
+    </script>
+</body>
+
+</html>
