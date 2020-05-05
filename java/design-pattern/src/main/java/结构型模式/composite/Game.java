@@ -1,4 +1,4 @@
-package 结构型模式.compose;
+package 结构型模式.composite;
 
 //Component组件，就是我们的抽象对象，我们最终的目的是管理这个抽象对象的（父类，代表了整体的对象）
 public abstract class Game {

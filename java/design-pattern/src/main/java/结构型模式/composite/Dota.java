@@ -1,4 +1,4 @@
-package 结构型模式.compose;
+package 结构型模式.composite;
 
 //Leaf 叶子结点，是抽象对象的具体的实现类，代表了 部分。
 public class Dota extends Game {

@@ -1,4 +1,4 @@
-package 结构型模式.compose;
+package 结构型模式.composite;
 
 import java.util.ArrayList;
 import java.util.List;

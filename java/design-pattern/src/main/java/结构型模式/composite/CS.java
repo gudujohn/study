@@ -1,8 +1,8 @@
-package 结构型模式.compose;
+package 结构型模式.composite;
 
-public class LOL extends Game {
+public class CS extends Game {
 
-	public LOL(String name) {
+	public CS(String name) {
 		super(name);
 	}
 

@@ -1,4 +1,4 @@
-package 结构型模式.compose;
+package 结构型模式.composite;
 
 public class test {
 	public static void main(String[] args) {
