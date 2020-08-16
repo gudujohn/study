@@ -17,6 +17,7 @@
     <modules>
         <module>design-pattern</module>
         <module>spring-boot-demo</module>
+	  <module>machine-examination</module>
     </modules>
 
 </project>
