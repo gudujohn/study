@@ -26,5 +26,6 @@ target/
 
 # c
 *.exe
+build
 
 hs_err_pid*
