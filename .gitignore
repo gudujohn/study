@@ -24,4 +24,7 @@ target/
 *.tar.gz
 *.rar
 
+# c
+*.exe
+
 hs_err_pid*
